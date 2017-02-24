@@ -36,14 +36,16 @@ function expect(obj1) {
 /*-----------------------------------------------Start--of--lexical--this--example-------------------------------------------------------*/
 function ExampleClass() {
     this.exampleVar = "example";
-    this.exampleFunction = function() {
+    this.exampleFunction = () => {
         return this.exampleVar;
     }
 }
 
 var ec = new ExampleClass();
 var func = ec.exampleFunction;
+console.log("Testing example...");
 expect(ec.exampleFunction()).toBe("example");
+console.log("Testing func()");
 expect(ec.exampleFunction()).toBe(func()); //Throws an error because func calls exampleFunction with the window as the caller
 tests.printResults();
 /*---------------------------------------------------------------------------------------------------------------------------------------*/

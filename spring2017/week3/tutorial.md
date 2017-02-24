@@ -54,6 +54,7 @@ traces back to the typescript. So, if you use a method in the template, you're g
 have to have that method in the typescript as well.
 
 So, we want to console.log the value of the todo when a button is clicked on.
+
 1. Add a button
 2. Add the attribute `(click)` to the button
 3. Set it equal to `log()`

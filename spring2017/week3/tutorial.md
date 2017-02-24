@@ -73,3 +73,14 @@ So, we want to console.log the value of the todo when a button is clicked on.
     }
     ...
 ```
+
+## Interfaces
+Interfaces are a way to enforce custom types. They are a great alternative to just putting `any` everywhere
+Example:
+```typescript
+interface Fruit {
+    type: string;
+    seeds: boolean;
+}
+let apple:Fruit = {type: "apple", seeds: true};
+```

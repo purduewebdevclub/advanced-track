@@ -1,5 +1,6 @@
 # More Angular 2 Components
 We talked briefly about Angular 2. There are many important aspects of an A2 app.
+
 1. Bootstrapping (making sure the bootstrapper receives root module)
 2. Declaring all components in NgModule
 3. Setting bootstrap of component in root NgModule

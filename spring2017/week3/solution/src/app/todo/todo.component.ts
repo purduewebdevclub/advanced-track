@@ -16,5 +16,6 @@ export class TodoComponent {
             ...this.todos,
             {name: this.todoName, id: this.todos.length}
         ]; //the array returns a new version of this.todos without changing the underlying reference to this.todos
+        console.log(this.todos);
     }
 }

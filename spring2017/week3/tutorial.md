@@ -1,4 +1,5 @@
 # Tutorial
+If you haven't already, please review the `components-intro.md` file.
 We will talk about many things.
 * Components in other Components
 * Two-Way Binding
@@ -6,12 +7,24 @@ We will talk about many things.
 
 ## Components in other Components
 Say I have two components, `AppComponent` and `TodoComponent`.
-If I wanted to put `TodoComponent` inside `AppComponent`, I can
+If I wanted to put `TodoComponent` inside `AppComponent`, I can add app-todo to the app-root's template:
 ```html
-    <app-root>
-        <app-todo></app-todo> <!--Assuming this is the right selector-->
-    </app-todo>
+    <!--Other app-root available html here--> 
+    <app-todo></app-todo> <!--Assuming this is the right selector-->
+    <!--Other app-root available html here-->
 ```
+You can put as many components as you'd like inside another component.
+Usually the structure is like this:
+```app-root
+    app-todo-list
+        app-new-todo
+        app-todo   
+``` 
+In this case, inside `app-root`, we have `app-todo-list`. `app-todo-list`
+has two components in its template. It contains `app-todo` and `app-new-todo`.
+Each component has its own specific purpose. `app-new-todo` has a purpose of
+creating a new `TodoItem`. `app-todo` is supposed to serve as a template for each
+of the todos.
 
 ## Two-Way Binding
 * This is called NgModel

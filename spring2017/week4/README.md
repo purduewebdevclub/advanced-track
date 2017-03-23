@@ -4,6 +4,5 @@ This week is extremely important. This week you will learn how to design and dev
 Topics:
 * Built-In Directives
 * Angular Design Patterns
-* Services
 
 All topics will be available in the slides for this week.
